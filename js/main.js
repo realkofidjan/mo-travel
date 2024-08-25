@@ -66,7 +66,7 @@ async function fetchWeather() {
   const latitude = selectedOption.value.split(",")[1];
 
   // URL for fetching the weather data
-  const weatherUrl = `http://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`;
+  const weatherUrl = `https://www.7timer.info/bin/api.pl?lon=${longitude}&lat=${latitude}&product=civillight&output=json`;
 
   try {
     const response = await fetch(weatherUrl);
